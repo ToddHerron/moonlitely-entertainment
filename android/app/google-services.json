@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "968802036417",
+    "project_id": "moonlitely-entertainmen-xt654z",
+    "storage_bucket": "moonlitely-entertainmen-xt654z.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968802036417:android:c79a5e6a18e87eaddf0240",
+        "android_client_info": {
+          "package_name": "com.moonlitely"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcdJbwukxUOu6EHcrHJCnA1wqLmXijcHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
