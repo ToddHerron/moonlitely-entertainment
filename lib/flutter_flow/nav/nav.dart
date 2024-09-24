@@ -73,14 +73,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
           ? const Auth2ProfileWidget()
-          : const Auth2CreateWidget(),
+          : const AccountCreateWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
               ? const Auth2ProfileWidget()
-              : const Auth2CreateWidget(),
+              : const AccountCreateWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -88,9 +88,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const HomePageWidget(),
         ),
         FFRoute(
-          name: 'auth_2_Create',
-          path: '/auth2Create',
-          builder: (context, params) => const Auth2CreateWidget(),
+          name: 'Account_Create',
+          path: '/createAccount',
+          builder: (context, params) => const AccountCreateWidget(),
         ),
         FFRoute(
           name: 'auth_2_Login',
@@ -286,7 +286,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/auth2Create';
+            return '/createAccount';
           }
           return null;
         },

@@ -1,10 +1,9 @@
-import '/account_profile_creation/edit_profile_auth_2/edit_profile_auth2_widget.dart';
+import '/account/edit_profile_auth_2/edit_profile_auth2_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'auth2_create_profile_widget.dart' show Auth2CreateProfileWidget;
+import 'auth2_edit_profile_widget.dart' show Auth2EditProfileWidget;
 import 'package:flutter/material.dart';
 
-class Auth2CreateProfileModel
-    extends FlutterFlowModel<Auth2CreateProfileWidget> {
+class Auth2EditProfileModel extends FlutterFlowModel<Auth2EditProfileWidget> {
   ///  State fields for stateful widgets in this page.
 
   // Model for editProfile_auth_2 component.

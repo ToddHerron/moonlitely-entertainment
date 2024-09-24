@@ -46,10 +46,15 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
         TextEditingController(text: currentUserDisplayName);
     _model.yourNameFocusNode ??= FocusNode();
 
-    _model.myBioTextController ??= TextEditingController(text: '[bio]');
+    _model.myBioTextController ??= TextEditingController();
     _model.myBioFocusNode ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {
+          _model.myBioTextController?.text =
+              FFLocalizations.of(context).getText(
+            'hb0awi64' /* [bio] */,
+          );
+        }));
   }
 
   @override
@@ -81,7 +86,9 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 0.0, 0.0),
             child: Text(
-              'Adjust the content below to update your profile.',
+              FFLocalizations.of(context).getText(
+                'cd3rqxxv' /* Adjust the content below to up... */,
+              ),
               style: FlutterFlowTheme.of(context).labelLarge.override(
                     fontFamily: 'Inter',
                     letterSpacing: 0.0,
@@ -205,7 +212,9 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                     }
                   }
                 },
-                text: 'Change Photo',
+                text: FFLocalizations.of(context).getText(
+                  '82j0m5cj' /* Change Photo */,
+                ),
                 options: FFButtonOptions(
                   width: 130.0,
                   height: 40.0,
@@ -237,12 +246,16 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
                 decoration: InputDecoration(
-                  labelText: 'Full Name',
+                  labelText: FFLocalizations.of(context).getText(
+                    'a9qyt8m6' /* Full Name */,
+                  ),
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
                       ),
-                  hintText: 'Your full name...',
+                  hintText: FFLocalizations.of(context).getText(
+                    'qp4u57p8' /* Your full name... */,
+                  ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
@@ -300,12 +313,22 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
             child: FlutterFlowDropDown<String>(
               controller: _model.dropDownValueController ??=
                   FormFieldController<String>(null),
-              options: const [
-                'Owner/Founder',
-                'Director',
-                'Manager',
-                'Mid-Manager',
-                'Employee'
+              options: [
+                FFLocalizations.of(context).getText(
+                  'rkrvmy5y' /* Owner/Founder */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'osuateyd' /* Director */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'rdhcz2w8' /* Manager */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'gmpcuvk7' /* Mid-Manager */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '1uhvmxln' /* Employee */,
+                )
               ],
               onChanged: (val) =>
                   safeSetState(() => _model.dropDownValue = val),
@@ -315,7 +338,9 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                     fontFamily: 'Inter',
                     letterSpacing: 0.0,
                   ),
-              hintText: 'Your Role',
+              hintText: FFLocalizations.of(context).getText(
+                '4wcc3e4b' /* Your Role */,
+              ),
               icon: Icon(
                 Icons.keyboard_arrow_down_rounded,
                 color: FlutterFlowTheme.of(context).secondaryText,
@@ -340,12 +365,16 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
               textCapitalization: TextCapitalization.sentences,
               obscureText: false,
               decoration: InputDecoration(
-                labelText: 'Short Description',
+                labelText: FFLocalizations.of(context).getText(
+                  'qdrf6epn' /* Short Description */,
+                ),
                 labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
                       fontFamily: 'Inter',
                       letterSpacing: 0.0,
                     ),
-                hintText: 'A little about you...',
+                hintText: FFLocalizations.of(context).getText(
+                  'dr3fw9qn' /* A little about you... */,
+                ),
                 hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
                       fontFamily: 'Inter',
                       letterSpacing: 0.0,
