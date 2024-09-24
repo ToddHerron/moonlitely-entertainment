@@ -189,7 +189,7 @@ class _Auth2ProfileWidgetState extends State<Auth2ProfileWidget>
                     builder: (context) => Text(
                       currentUserDisplayName,
                       style: FlutterFlowTheme.of(context).displaySmall.override(
-                            fontFamily: 'Inter Tight',
+                            fontFamily: 'Readex Pro',
                             letterSpacing: 0.0,
                           ),
                     ),

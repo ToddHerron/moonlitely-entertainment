@@ -73,7 +73,7 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
             child: Text(
               widget.title,
               style: FlutterFlowTheme.of(context).displaySmall.override(
-                    fontFamily: 'Inter Tight',
+                    fontFamily: 'Readex Pro',
                     letterSpacing: 0.0,
                   ),
             ),
@@ -414,7 +414,7 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                       content: Text(
                         'Profile has been updated!',
                         style: FlutterFlowTheme.of(context).titleSmall.override(
-                              fontFamily: 'Inter Tight',
+                              fontFamily: 'Inter',
                               color: FlutterFlowTheme.of(context).info,
                               letterSpacing: 0.0,
                             ),
@@ -434,7 +434,7 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                       const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily: 'Inter Tight',
+                        fontFamily: 'Inter',
                         letterSpacing: 0.0,
                       ),
                   elevation: 3.0,

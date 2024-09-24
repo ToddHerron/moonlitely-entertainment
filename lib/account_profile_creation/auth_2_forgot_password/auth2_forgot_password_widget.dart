@@ -133,7 +133,7 @@ class _Auth2ForgotPasswordWidgetState extends State<Auth2ForgotPasswordWidget>
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Readex Pro',
                                 color: FlutterFlowTheme.of(context).info,
                                 letterSpacing: 0.0,
                               ),
@@ -204,7 +204,7 @@ class _Auth2ForgotPasswordWidgetState extends State<Auth2ForgotPasswordWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .displaySmall
                                     .override(
-                                      fontFamily: 'Inter Tight',
+                                      fontFamily: 'Readex Pro',
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -327,7 +327,7 @@ class _Auth2ForgotPasswordWidgetState extends State<Auth2ForgotPasswordWidget>
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Inter Tight',
+                                        fontFamily: 'Inter',
                                         color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),

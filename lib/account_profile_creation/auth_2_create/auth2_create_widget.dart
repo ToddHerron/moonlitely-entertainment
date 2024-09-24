@@ -141,7 +141,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Readex Pro',
                                 color: FlutterFlowTheme.of(context).info,
                                 letterSpacing: 0.0,
                               ),
@@ -185,7 +185,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                               style: FlutterFlowTheme.of(context)
                                   .displaySmall
                                   .override(
-                                    fontFamily: 'Inter Tight',
+                                    fontFamily: 'Readex Pro',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -525,7 +525,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Inter Tight',
+                                        fontFamily: 'Inter',
                                         color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),
@@ -587,7 +587,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Inter Tight',
+                                        fontFamily: 'Inter',
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                         letterSpacing: 0.0,
@@ -639,7 +639,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,

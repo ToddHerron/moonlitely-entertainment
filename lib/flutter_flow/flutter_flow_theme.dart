@@ -54,6 +54,14 @@ abstract class FlutterFlowTheme {
   late Color error;
   late Color info;
 
+  late Color hintTextBorder;
+  late Color transparent;
+  late Color errorBackground;
+  late Color hoverBackground;
+  late Color callToAction;
+  late Color backgroundBlack;
+  late Color navigationIcon;
+
   @Deprecated('Use displaySmallFamily instead')
   String get title1Family => displaySmallFamily;
   @Deprecated('Use displaySmall instead')
@@ -125,22 +133,30 @@ class LightModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF4B39EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
-  late Color alternate = const Color(0xFFE0E3E7);
-  late Color primaryText = const Color(0xFF14181B);
+  late Color primary = const Color(0xFF2B95E4);
+  late Color secondary = const Color(0xFF7188B2);
+  late Color tertiary = const Color(0xFF984BB6);
+  late Color alternate = const Color(0xFFDFEDEC);
+  late Color primaryText = const Color(0xFF101518);
   late Color secondaryText = const Color(0xFF57636C);
-  late Color primaryBackground = const Color(0xFFF1F4F8);
+  late Color primaryBackground = const Color(0xFFEFEFF3);
   late Color secondaryBackground = const Color(0xFFFFFFFF);
-  late Color accent1 = const Color(0x4C4B39EF);
-  late Color accent2 = const Color(0x4D39D2C0);
-  late Color accent3 = const Color(0x4DEE8B60);
-  late Color accent4 = const Color(0xCCFFFFFF);
-  late Color success = const Color(0xFF249689);
-  late Color warning = const Color(0xFFF9CF58);
-  late Color error = const Color(0xFFFF5963);
+  late Color accent1 = const Color(0xFF023148);
+  late Color accent2 = const Color(0xFF293340);
+  late Color accent3 = const Color(0xFF35233F);
+  late Color accent4 = const Color(0xFF464E4F);
+  late Color success = const Color(0xFF1CA95B);
+  late Color warning = const Color(0xFFF3C344);
+  late Color error = const Color(0xFFD44A53);
   late Color info = const Color(0xFFFFFFFF);
+
+  late Color hintTextBorder = const Color(0xFFAFC7CA);
+  late Color transparent = const Color(0x00000000);
+  late Color errorBackground = const Color(0xFFF1E0E0);
+  late Color hoverBackground = const Color(0xFFF7F7F9);
+  late Color callToAction = const Color(0xFF2B95E4);
+  late Color backgroundBlack = const Color(0xFF000000);
+  late Color navigationIcon = const Color(0xFFABAAAD);
 }
 
 abstract class Typography {
@@ -181,88 +197,88 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Inter Tight';
+  String get displayLargeFamily => 'Readex Pro';
   TextStyle get displayLarge => GoogleFonts.getFont(
-        'Inter Tight',
+        'Readex Pro',
         color: theme.primaryText,
-        fontWeight: FontWeight.w600,
-        fontSize: 64.0,
+        fontWeight: FontWeight.w300,
+        fontSize: 52.0,
       );
-  String get displayMediumFamily => 'Inter Tight';
+  String get displayMediumFamily => 'Readex Pro';
   TextStyle get displayMedium => GoogleFonts.getFont(
-        'Inter Tight',
-        color: theme.primaryText,
-        fontWeight: FontWeight.w600,
+        'Readex Pro',
+        color: theme.primary,
+        fontWeight: FontWeight.w500,
         fontSize: 44.0,
       );
-  String get displaySmallFamily => 'Inter Tight';
+  String get displaySmallFamily => 'Readex Pro';
   TextStyle get displaySmall => GoogleFonts.getFont(
-        'Inter Tight',
+        'Readex Pro',
         color: theme.primaryText,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w500,
         fontSize: 36.0,
       );
-  String get headlineLargeFamily => 'Inter Tight';
+  String get headlineLargeFamily => 'Readex Pro';
   TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Inter Tight',
+        'Readex Pro',
         color: theme.primaryText,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.normal,
         fontSize: 32.0,
       );
-  String get headlineMediumFamily => 'Inter Tight';
+  String get headlineMediumFamily => 'Readex Pro';
   TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Inter Tight',
-        color: theme.primaryText,
-        fontWeight: FontWeight.w600,
+        'Readex Pro',
+        color: theme.primary,
+        fontWeight: FontWeight.normal,
         fontSize: 28.0,
       );
-  String get headlineSmallFamily => 'Inter Tight';
+  String get headlineSmallFamily => 'Readex Pro';
   TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Inter Tight',
+        'Readex Pro',
         color: theme.primaryText,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.normal,
         fontSize: 24.0,
       );
-  String get titleLargeFamily => 'Inter Tight';
+  String get titleLargeFamily => 'Inter';
   TextStyle get titleLarge => GoogleFonts.getFont(
-        'Inter Tight',
+        'Inter',
         color: theme.primaryText,
-        fontWeight: FontWeight.w600,
-        fontSize: 20.0,
+        fontWeight: FontWeight.w500,
+        fontSize: 22.0,
       );
-  String get titleMediumFamily => 'Inter Tight';
+  String get titleMediumFamily => 'Inter';
   TextStyle get titleMedium => GoogleFonts.getFont(
-        'Inter Tight',
-        color: theme.primaryText,
-        fontWeight: FontWeight.w600,
+        'Inter',
+        color: theme.primary,
+        fontWeight: FontWeight.w500,
         fontSize: 18.0,
       );
-  String get titleSmallFamily => 'Inter Tight';
+  String get titleSmallFamily => 'Inter';
   TextStyle get titleSmall => GoogleFonts.getFont(
-        'Inter Tight',
-        color: theme.primaryText,
-        fontWeight: FontWeight.w600,
+        'Inter',
+        color: theme.secondary,
+        fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
   String get labelLargeFamily => 'Inter';
   TextStyle get labelLarge => GoogleFonts.getFont(
         'Inter',
         color: theme.secondaryText,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
   String get labelMediumFamily => 'Inter';
   TextStyle get labelMedium => GoogleFonts.getFont(
         'Inter',
         color: theme.secondaryText,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
   String get labelSmallFamily => 'Inter';
   TextStyle get labelSmall => GoogleFonts.getFont(
         'Inter',
         color: theme.secondaryText,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.w500,
         fontSize: 12.0,
       );
   String get bodyLargeFamily => 'Inter';
@@ -296,22 +312,30 @@ class DarkModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF4B39EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
-  late Color alternate = const Color(0xFF262D34);
+  late Color primary = const Color(0xFF0E8EE5);
+  late Color secondary = const Color(0xFF8292DA);
+  late Color tertiary = const Color(0xFF984BB6);
+  late Color alternate = const Color(0xFFBFD0CF);
   late Color primaryText = const Color(0xFFFFFFFF);
-  late Color secondaryText = const Color(0xFF95A1AC);
-  late Color primaryBackground = const Color(0xFF1D2428);
-  late Color secondaryBackground = const Color(0xFF14181B);
-  late Color accent1 = const Color(0x4C4B39EF);
-  late Color accent2 = const Color(0x4D39D2C0);
-  late Color accent3 = const Color(0x4DEE8B60);
-  late Color accent4 = const Color(0xB2262D34);
+  late Color secondaryText = const Color(0xFFB9C6D2);
+  late Color primaryBackground = const Color(0xFF131821);
+  late Color secondaryBackground = const Color(0xFF2E3345);
+  late Color accent1 = const Color(0xFF032D42);
+  late Color accent2 = const Color(0xFF2E353D);
+  late Color accent3 = const Color(0xFF35233F);
+  late Color accent4 = const Color(0xFF3E4648);
   late Color success = const Color(0xFF249689);
   late Color warning = const Color(0xFFF9CF58);
   late Color error = const Color(0xFFFF5963);
   late Color info = const Color(0xFFFFFFFF);
+
+  late Color hintTextBorder = const Color(0xFF6C7786);
+  late Color transparent = const Color(0x00000000);
+  late Color errorBackground = const Color(0xFF441214);
+  late Color hoverBackground = const Color(0xFF212633);
+  late Color callToAction = const Color(0xFF48A9ED);
+  late Color backgroundBlack = const Color(0xFF000000);
+  late Color navigationIcon = const Color(0xFFABAAAD);
 }
 
 extension TextStyleHelper on TextStyle {
