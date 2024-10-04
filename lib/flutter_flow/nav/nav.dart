@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
@@ -72,40 +73,25 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? const Auth2ProfileWidget()
-          : const AccountCreateWidget(),
+          ? const DashboardVenueAdminWidget()
+          : const HomePageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? const Auth2ProfileWidget()
-              : const AccountCreateWidget(),
+              ? const DashboardVenueAdminWidget()
+              : const HomePageWidget(),
         ),
         FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
-          builder: (context, params) => const HomePageWidget(),
+          name: 'HomePageOld',
+          path: '/homePageOld',
+          builder: (context, params) => const HomePageOldWidget(),
         ),
         FFRoute(
-          name: 'Account_Create',
-          path: '/createAccount',
-          builder: (context, params) => const AccountCreateWidget(),
-        ),
-        FFRoute(
-          name: 'auth_2_Login',
-          path: '/auth2Login',
-          builder: (context, params) => const Auth2LoginWidget(),
-        ),
-        FFRoute(
-          name: 'auth_2_ForgotPassword',
-          path: '/auth2ForgotPassword',
-          builder: (context, params) => const Auth2ForgotPasswordWidget(),
-        ),
-        FFRoute(
-          name: 'auth_2_createProfile',
-          path: '/auth2CreateProfile',
-          builder: (context, params) => const Auth2CreateProfileWidget(),
+          name: 'createProfile_VenueAdmin',
+          path: '/CreateProfile',
+          builder: (context, params) => const CreateProfileVenueAdminWidget(),
         ),
         FFRoute(
           name: 'auth_2_Profile',
@@ -116,6 +102,51 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'auth_2_EditProfile',
           path: '/auth2EditProfile',
           builder: (context, params) => const Auth2EditProfileWidget(),
+        ),
+        FFRoute(
+          name: 'Email_Verified',
+          path: '/emailVerified',
+          builder: (context, params) => const EmailVerifiedWidget(),
+        ),
+        FFRoute(
+          name: 'Dashboard_VenueAdmin',
+          path: '/dashboardVenueAdmin',
+          requireAuth: true,
+          builder: (context, params) => const DashboardVenueAdminWidget(),
+        ),
+        FFRoute(
+          name: 'Dashboard_Producer',
+          path: '/dashboardProducer',
+          requireAuth: true,
+          builder: (context, params) => const DashboardProducerWidget(),
+        ),
+        FFRoute(
+          name: 'Dashboard_Emcee',
+          path: '/dashboardEmcee',
+          requireAuth: true,
+          builder: (context, params) => const DashboardEmceeWidget(),
+        ),
+        FFRoute(
+          name: 'Dashboard_ContentCreator',
+          path: '/dashboardContentCreator',
+          requireAuth: true,
+          builder: (context, params) => const DashboardContentCreatorWidget(),
+        ),
+        FFRoute(
+          name: 'Dashboard_MoonlitelyAdmin',
+          path: '/dashboardMoonlitelyAdmin',
+          requireAuth: true,
+          builder: (context, params) => const DashboardMoonlitelyAdminWidget(),
+        ),
+        FFRoute(
+          name: 'HomePageRecent',
+          path: '/HomePageRecent',
+          builder: (context, params) => const HomePageRecentWidget(),
+        ),
+        FFRoute(
+          name: 'HomePage',
+          path: '/homePage',
+          builder: (context, params) => const HomePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -286,7 +317,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/createAccount';
+            return '/homePage';
           }
           return null;
         },

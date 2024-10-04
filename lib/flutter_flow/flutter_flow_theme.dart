@@ -153,7 +153,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color hintTextBorder = const Color(0xFFAFC7CA);
   late Color transparent = const Color(0x00000000);
   late Color errorBackground = const Color(0xFFF1E0E0);
-  late Color hoverBackground = const Color(0xFFF7F7F9);
+  late Color hoverBackground = const Color(0xFFEDEDFD);
   late Color callToAction = const Color(0xFF2B95E4);
   late Color backgroundBlack = const Color(0xFF000000);
   late Color navigationIcon = const Color(0xFFABAAAD);
@@ -332,7 +332,7 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color hintTextBorder = const Color(0xFF6C7786);
   late Color transparent = const Color(0x00000000);
   late Color errorBackground = const Color(0xFF441214);
-  late Color hoverBackground = const Color(0xFF212633);
+  late Color hoverBackground = const Color(0xFF4F6993);
   late Color callToAction = const Color(0xFF48A9ED);
   late Color backgroundBlack = const Color(0xFF000000);
   late Color navigationIcon = const Color(0xFFABAAAD);

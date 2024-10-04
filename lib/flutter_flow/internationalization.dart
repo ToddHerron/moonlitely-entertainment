@@ -106,252 +106,302 @@ Locale createLocale(String language) => language.contains('_')
     : Locale(language);
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // HomePage
+  // HomePageOld
   {
-    'ikflsyz5': {
-      'en': 'HomePage',
+    '9vq00ydk': {
+      'en': 'Sign In',
+      'es': 'Iniciar sesión',
+      'fr': 'Se connecter',
+    },
+    'va38g388': {
+      'en': 'Venues',
+      'es': 'Lugares',
+      'fr': 'Lieux',
+    },
+    '30all7q8': {
+      'en': 'Transform Your Venue with Captivating Live Entertainment',
+      'es': '',
+      'fr': '',
+    },
+    'zc2ar0aq': {
+      'en':
+          'Are you looking to boost your foot traffic, increase customer engagement, and create a vibrant atmosphere in your venue? Moonlitely Entertainment connects you with talented performers and unique entertainment experiences that will leave your customers wanting more.',
+      'es': '',
+      'fr': '',
+    },
+    '1hdl2trk': {
+      'en': 'Increase Revenue: ',
+      'es': '',
+      'fr': '',
+    },
+    'dm4f8ygi': {
+      'en': 'Draw in larger crowds and boost your bottom line.',
+      'es': '',
+      'fr': '',
+    },
+    'z954si77': {
+      'en': 'Effortless Booking: ',
+      'es': '',
+      'fr': '',
+    },
+    'k661ruiv': {
+      'en': 'Browse a diverse catalog of shows and book with ease.',
+      'es': '',
+      'fr': '',
+    },
+    'cc129iyo': {
+      'en': 'Diverse Entertainment:  ',
+      'es': '',
+      'fr': '',
+    },
+    'yawtzsxj': {
+      'en':
+          'From trivia nights to live music, find the perfect fit for your venue and clientele.',
+      'es': '',
+      'fr': '',
+    },
+    'bnjeiv4r': {
+      'en': 'Elevate Your Brand:  ',
+      'es': '',
+      'fr': '',
+    },
+    'cmqrl01j': {
+      'en':
+          'Offer unforgettable experiences that set you apart from the competition.',
+      'es': '',
+      'fr': '',
+    },
+    '7pg8y7hp': {
+      'en':
+          'List your venue today and start booking incredible live entertainment!\n',
+      'es': '',
+      'fr': '',
+    },
+    '4ut78p8o': {
+      'en': 'List Your Venue',
+      'es': 'Enumere su lugar',
+      'fr': 'Inscrivez votre lieu',
+    },
+    '972uedtv': {
+      'en': 'Producers',
+      'es': 'Productores',
+      'fr': 'Producteurs',
+    },
+    'm2s24yai': {
+      'en':
+          'Your Stage Awaits: Connect with Venues and Build Your Entertainment Empire',
+      'es': '',
+      'fr': '',
+    },
+    'ncuacyus': {
+      'en':
+          'Moonlitely Entertainment empowers you to take your production skills to the next level.  We provide the platform to connect with eager venue owners and showcase your unique entertainment creations.\n\n\n',
+      'es': '',
+      'fr': '',
+    },
+    'lmqk5t61': {
+      'en': 'Expand Your Reach: ',
+      'es': '',
+      'fr': '',
+    },
+    'u4ibo70x': {
+      'en':
+          'Access a network of venues searching for high-quality entertainment.',
+      'es': '',
+      'fr': '',
+    },
+    '08oifj5p': {
+      'en': 'Simplify Booking: ',
+      'es': '',
+      'fr': '',
+    },
+    'tlgpumcf': {
+      'en':
+          'Manage your shows, schedule performances, and coordinate with venues seamlessly.',
+      'es': '',
+      'fr': '',
+    },
+    'vrqweswm': {
+      'en': 'Grow Your Audience: ',
+      'es': '',
+      'fr': '',
+    },
+    'ci3l7c84': {
+      'en':
+          'Bring your entertainment vision to life and captivate new audiences.',
+      'es': '',
+      'fr': '',
+    },
+    'dgqiu32v': {
+      'en': 'Increase Earning Potential: ',
+      'es': '',
+      'fr': '',
+    },
+    '9bwtzbj4': {
+      'en': 'Maximize your bookings and unlock new revenue streams.',
+      'es': '',
+      'fr': '',
+    },
+    'xgb3qkq3': {
+      'en':
+          'Join Moonlitely and unlock a world of opportunities for your productions.\n',
+      'es': '',
+      'fr': '',
+    },
+    'yggl9dw3': {
+      'en': 'Become A Producer',
+      'es': '',
+      'fr': '',
+    },
+    'u6saq7cn': {
+      'en': 'Emcees',
+      'es': '',
+      'fr': '',
+    },
+    'zq4f3cbj': {
+      'en': 'Shine On Stage:\nFind Gigs and Captivate Audiences',
+      'es': '',
+      'fr': '',
+    },
+    'mtjfz7n9': {
+      'en':
+          'Calling all charismatic hosts, engaging storytellers, and captivating performers! Moonlitely Entertainment is your gateway to exciting emcee opportunities at diverse venues.\n\n\n',
+      'es': '',
+      'fr': '',
+    },
+    'ddh9wnkm': {
+      'en': 'Showcase Your Talent: ',
+      'es': '',
+      'fr': '',
+    },
+    'dsiemjd1': {
+      'en':
+          'Connect with producers seeking talented emcees to bring their shows to life.',
+      'es': '',
+      'fr': '',
+    },
+    'au4dy0wf': {
+      'en': 'Find Your Perfect Fit: ',
+      'es': '',
+      'fr': '',
+    },
+    '3fq861iy': {
+      'en':
+          'Browse a wide range of shows, from trivia nights to comedy shows, and find gigs that match your style.',
+      'es': '',
+      'fr': '',
+    },
+    '40pmposy': {
+      'en': 'Boost Your Profile: ',
+      'es': '',
+      'fr': '',
+    },
+    'yzgmk1o1': {
+      'en':
+          'Gain experience, build your reputation, and become a sought-after emcee.',
+      'es': '',
+      'fr': '',
+    },
+    'pq2e285r': {
+      'en': 'Build Your Network:  ',
+      'es': '',
+      'fr': '',
+    },
+    '7cc4o9qo': {
+      'en':
+          'Collaborate with producers and content creators to expand your professional circle.',
+      'es': '',
+      'fr': '',
+    },
+    'kz21rpxk': {
+      'en':
+          'Create your profile and start browsing emcee opportunities today!\n',
+      'es': '',
+      'fr': '',
+    },
+    'frr838kv': {
+      'en': 'Become An Emcee',
+      'es': '',
+      'fr': '',
+    },
+    '7zz81trr': {
+      'en': 'Content Creators',
+      'es': '',
+      'fr': '',
+    },
+    'u6exr6an': {
+      'en': 'Unleash Your Creativity: Bring Your Entertainment Ideas to Life',
+      'es': '',
+      'fr': '',
+    },
+    'm3oy46mk': {
+      'en':
+          'Do you have a passion for creating engaging trivia questions, hilarious comedy routines, or unique game concepts? Moonlitely Entertainment provides the platform to share your creations with the world.\n\n\n',
+      'es': '',
+      'fr': '',
+    },
+    'tq8kfwu9': {
+      'en': 'Monetize Your Passion: ',
+      'es': '',
+      'fr': '',
+    },
+    'izj4ba9m': {
+      'en': 'Turn your entertainment ideas into a source of income.',
+      'es': '',
+      'fr': '',
+    },
+    '4r0bdbxe': {
+      'en': 'Collaborate with Professionals: ',
+      'es': '',
+      'fr': '',
+    },
+    'yb08mt75': {
+      'en':
+          'Partner with producers and emcees to bring your content to the stage.',
+      'es': '',
+      'fr': '',
+    },
+    'g5zpnkfy': {
+      'en': 'Reach Wider Audiences: ',
+      'es': '',
+      'fr': '',
+    },
+    '16xeiwyr': {
+      'en':
+          'See your creations come to life at various venues and entertain diverse crowds.',
+      'es': '',
+      'fr': '',
+    },
+    'pfu6da8v': {
+      'en': 'Build Your Portfolio: ',
+      'es': '',
+      'fr': '',
+    },
+    '5hajjx71': {
+      'en':
+          'Showcase your talent and gain recognition for your unique content.',
+      'es': '',
+      'fr': '',
+    },
+    '1po628s7': {
+      'en': 'Join Moonlitely and let your creativity shine!\n\n',
+      'es': '',
+      'fr': '',
+    },
+    'may3cr71': {
+      'en': 'Become A Content Creator',
       'es': '',
       'fr': '',
     },
     'hl7niboj': {
       'en': 'Home',
-      'es': '',
-      'fr': '',
+      'es': 'Hogar',
+      'fr': 'Maison',
     },
   },
-  // Account_Create
-  {
-    'cfpbok9r': {
-      'en': 'Get Started',
-      'es': 'Empezar',
-      'fr': 'Commencer',
-    },
-    'n4vmbeab': {
-      'en': 'Email',
-      'es': 'Correo electrónico',
-      'fr': 'E-mail',
-    },
-    'a25a44kn': {
-      'en': '',
-      'es': '',
-      'fr': '',
-    },
-    '6e8xzn6y': {
-      'en': 'todd.c.herron@gmail.com',
-      'es': '',
-      'fr': '',
-    },
-    '5sl7mxrl': {
-      'en': 'Password',
-      'es': 'Contraseña',
-      'fr': 'Mot de passe',
-    },
-    'p57latkk': {
-      'en': '',
-      'es': '',
-      'fr': '',
-    },
-    'kcus22ga': {
-      'en': 'test1234',
-      'es': '',
-      'fr': '',
-    },
-    'vauloxcs': {
-      'en': 'Confirm password',
-      'es': 'Confirmar contraseña',
-      'fr': 'Confirmez le mot de passe',
-    },
-    'y9tj3i1m': {
-      'en': '',
-      'es': '',
-      'fr': '',
-    },
-    'j7c07y2j': {
-      'en': 'test1234',
-      'es': '',
-      'fr': '',
-    },
-    'evrj0xwi': {
-      'en': 'Create Account',
-      'es': 'Crear una cuenta',
-      'fr': 'Créer un compte',
-    },
-    'd5hxsimf': {
-      'en': 'or continue with',
-      'es': 'o continuar con',
-      'fr': 'ou continuer avec',
-    },
-    'st674hv6': {
-      'en': 'Google',
-      'es': 'Google',
-      'fr': 'Google',
-    },
-    '2xgou0zv': {
-      'en': 'Apple',
-      'es': 'Apple',
-      'fr': 'Apple',
-    },
-    'd1ku5slp': {
-      'en': 'Already have an account? ',
-      'es': '',
-      'fr': '',
-    },
-    'w8i2enrw': {
-      'en': 'SIGN IN',
-      'es': '',
-      'fr': '',
-    },
-    'y4mvvz7k': {
-      'en': 'RESET PASSWORD',
-      'es': '',
-      'fr': '',
-    },
-    'x4eo8qlc': {
-      'en': 'Email address is required',
-      'es': 'Se requiere dirección de correo electrónico',
-      'fr': 'L\'adresse e-mail est obligatoire',
-    },
-    '25r4t2hc': {
-      'en': 'Invalid email address',
-      'es': '',
-      'fr': '',
-    },
-    'do7d5kw6': {
-      'en': 'Please choose an option from the dropdown',
-      'es': '',
-      'fr': '',
-    },
-    'iye8r9nq': {
-      'en': 'Field is required',
-      'es': '',
-      'fr': '',
-    },
-    'cfvqdjdm': {
-      'en': 'Please choose an option from the dropdown',
-      'es': '',
-      'fr': '',
-    },
-    'g1e4irwt': {
-      'en': 'Field is required',
-      'es': '',
-      'fr': '',
-    },
-    'wm4u8qor': {
-      'en': 'Please choose an option from the dropdown',
-      'es': '',
-      'fr': '',
-    },
-    'x2d39ddq': {
-      'en': 'Home',
-      'es': '',
-      'fr': '',
-    },
-  },
-  // auth_2_Login
-  {
-    'u5xx5d71': {
-      'en': 'flow.io',
-      'es': '',
-      'fr': '',
-    },
-    'ejyr5fyb': {
-      'en': 'Welcome Back',
-      'es': '',
-      'fr': '',
-    },
-    'htz9fp7g': {
-      'en': 'Fill out the information below in order to access your account.',
-      'es': '',
-      'fr': '',
-    },
-    'qynl9ewv': {
-      'en': 'Email',
-      'es': '',
-      'fr': '',
-    },
-    'j1ww1er8': {
-      'en': 'Password',
-      'es': '',
-      'fr': '',
-    },
-    '7ha2aq8m': {
-      'en': 'Sign In',
-      'es': '',
-      'fr': '',
-    },
-    'v4ny5gxu': {
-      'en': 'Or sign in with',
-      'es': '',
-      'fr': '',
-    },
-    '6cd5jhsh': {
-      'en': 'Continue with Google',
-      'es': '',
-      'fr': '',
-    },
-    'm104ufi4': {
-      'en': 'Continue with Apple',
-      'es': '',
-      'fr': '',
-    },
-    '0wpi4gwl': {
-      'en': 'Don\'t have an account?  ',
-      'es': '',
-      'fr': '',
-    },
-    'wmunrhgl': {
-      'en': 'Create Account',
-      'es': '',
-      'fr': '',
-    },
-    'e9xwcm2m': {
-      'en': 'Forgot password?',
-      'es': '',
-      'fr': '',
-    },
-    '2sp6b6ez': {
-      'en': 'Home',
-      'es': '',
-      'fr': '',
-    },
-  },
-  // auth_2_ForgotPassword
+  // createProfile_VenueAdmin
   {
     'icmjqhgr': {
-      'en': 'flow.io',
-      'es': '',
-      'fr': '',
-    },
-    'oj4e382f': {
-      'en': 'Forgot Password',
-      'es': '',
-      'fr': '',
-    },
-    'jq4w0x53': {
-      'en':
-          'Please fill out your email belo in order to recieve a reset password link.',
-      'es': '',
-      'fr': '',
-    },
-    'nj7qwy0m': {
-      'en': 'Email',
-      'es': '',
-      'fr': '',
-    },
-    'kje4y70b': {
-      'en': 'Send Reset Link',
-      'es': '',
-      'fr': '',
-    },
-    '9aeoc0cx': {
-      'en': 'Home',
-      'es': '',
-      'fr': '',
-    },
-  },
-  // auth_2_createProfile
-  {
-    '3utqzxu6': {
       'en': 'flow.io',
       'es': '',
       'fr': '',
@@ -406,6 +456,599 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Home',
       'es': '',
       'fr': '',
+    },
+  },
+  // Email_Verified
+  {
+    'uppy6h65': {
+      'en': 'Email Verified',
+      'es': 'Correo electrónico verificado',
+      'fr': 'E-mail vérifié',
+    },
+    'x2d39ddq': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'fr': 'Maison',
+    },
+  },
+  // Dashboard_VenueAdmin
+  {
+    'ef94sv23': {
+      'en': 'Below is a summary of your teams activity.',
+      'es': '',
+      'fr': '',
+    },
+    'biu6yjn0': {
+      'en': 'New Customers',
+      'es': '',
+      'fr': '',
+    },
+    'g6fk9c5f': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    'lwiax6bj': {
+      'en': 'New Contracts',
+      'es': '',
+      'fr': '',
+    },
+    'i0sgt5xq': {
+      'en': '3,200',
+      'es': '',
+      'fr': '',
+    },
+    'eay5nqcg': {
+      'en': 'Venues',
+      'es': '',
+      'fr': '',
+    },
+    'd6dy209g': {
+      'en': 'UI Design Team',
+      'es': '',
+      'fr': '',
+    },
+    '9k0hs4vo': {
+      'en': '4 Members',
+      'es': '',
+      'fr': '',
+    },
+    '56byyo7b': {
+      'en': 'Contract Activity',
+      'es': '',
+      'fr': '',
+    },
+    '8tiff86s': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    '9i92e6v7': {
+      'en': 'Device Management',
+      'es': '',
+      'fr': '',
+    },
+    'ch520ura': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    '6x3plidd': {
+      'en': 'Dashboard',
+      'es': '',
+      'fr': '',
+    },
+    '2c1deyy6': {
+      'en': '__',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // Dashboard_Producer
+  {
+    '920dk1ks': {
+      'en': 'Below is a summary of your teams activity.',
+      'es': '',
+      'fr': '',
+    },
+    '5rr2zuc9': {
+      'en': 'New Customers',
+      'es': '',
+      'fr': '',
+    },
+    'ujoatr2l': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    '9owg21g8': {
+      'en': 'New Contracts',
+      'es': '',
+      'fr': '',
+    },
+    'knf6njjj': {
+      'en': '3,200',
+      'es': '',
+      'fr': '',
+    },
+    'f90ok52a': {
+      'en': 'Projects',
+      'es': '',
+      'fr': '',
+    },
+    'gg46r1kv': {
+      'en': 'UI Design Team',
+      'es': '',
+      'fr': '',
+    },
+    'g7ox1p4i': {
+      'en': '4 Members',
+      'es': '',
+      'fr': '',
+    },
+    'fthwycg4': {
+      'en': 'Contract Activity',
+      'es': '',
+      'fr': '',
+    },
+    'xm961fzw': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'jpoe23z4': {
+      'en': 'Device Management',
+      'es': '',
+      'fr': '',
+    },
+    '0gbw590o': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'kv1bvlpc': {
+      'en': 'Dashboard',
+      'es': '',
+      'fr': '',
+    },
+    '3yv6uwfb': {
+      'en': '__',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // Dashboard_Emcee
+  {
+    '9uob4ssu': {
+      'en': 'Below is a summary of your teams activity.',
+      'es': '',
+      'fr': '',
+    },
+    '1yeaw518': {
+      'en': 'New Customers',
+      'es': '',
+      'fr': '',
+    },
+    'pakt47zg': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    'mal0mg2t': {
+      'en': 'New Contracts',
+      'es': '',
+      'fr': '',
+    },
+    'p9gaktqc': {
+      'en': '3,200',
+      'es': '',
+      'fr': '',
+    },
+    'yjeyd2tz': {
+      'en': 'Projects',
+      'es': '',
+      'fr': '',
+    },
+    'l479m4ng': {
+      'en': 'UI Design Team',
+      'es': '',
+      'fr': '',
+    },
+    '6siki0hy': {
+      'en': '4 Members',
+      'es': '',
+      'fr': '',
+    },
+    'dx39z1g0': {
+      'en': 'Contract Activity',
+      'es': '',
+      'fr': '',
+    },
+    'y6sv1tw9': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'bgewigyg': {
+      'en': 'Device Management',
+      'es': '',
+      'fr': '',
+    },
+    'mg9c1w1p': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'n3mi4nbb': {
+      'en': 'Dashboard',
+      'es': '',
+      'fr': '',
+    },
+    's9fvhsi5': {
+      'en': '__',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // Dashboard_ContentCreator
+  {
+    'd1zdyinw': {
+      'en': 'Below is a summary of your teams activity.',
+      'es': '',
+      'fr': '',
+    },
+    'rgfb8t8h': {
+      'en': 'New Customers',
+      'es': '',
+      'fr': '',
+    },
+    'iua0sy1t': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    '0lphgt4a': {
+      'en': 'New Contracts',
+      'es': '',
+      'fr': '',
+    },
+    'cvoxd9eh': {
+      'en': '3,200',
+      'es': '',
+      'fr': '',
+    },
+    'lkrsrxd3': {
+      'en': 'Projects',
+      'es': '',
+      'fr': '',
+    },
+    '5qg94anf': {
+      'en': 'UI Design Team',
+      'es': '',
+      'fr': '',
+    },
+    'w53g0hjc': {
+      'en': '4 Members',
+      'es': '',
+      'fr': '',
+    },
+    'km94lq0t': {
+      'en': 'Contract Activity',
+      'es': '',
+      'fr': '',
+    },
+    '12bl0bwd': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'uc9mu70r': {
+      'en': 'Device Management',
+      'es': '',
+      'fr': '',
+    },
+    '86zb43h1': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'bcl08dz6': {
+      'en': 'Dashboard',
+      'es': '',
+      'fr': '',
+    },
+    '931a7t32': {
+      'en': '__',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // Dashboard_MoonlitelyAdmin
+  {
+    '9msdfhii': {
+      'en': 'Below is a summary of your teams activity.',
+      'es': '',
+      'fr': '',
+    },
+    'e28b5sfc': {
+      'en': 'New Customers',
+      'es': '',
+      'fr': '',
+    },
+    'q7lypaem': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    'wsy35yis': {
+      'en': 'New Contracts',
+      'es': '',
+      'fr': '',
+    },
+    'c4nd7ecy': {
+      'en': '3,200',
+      'es': '',
+      'fr': '',
+    },
+    'a514p480': {
+      'en': 'Projects',
+      'es': '',
+      'fr': '',
+    },
+    'hreb8zne': {
+      'en': 'UI Design Team',
+      'es': '',
+      'fr': '',
+    },
+    'gm7i16pd': {
+      'en': '4 Members',
+      'es': '',
+      'fr': '',
+    },
+    'yh77jdpv': {
+      'en': 'Contract Activity',
+      'es': '',
+      'fr': '',
+    },
+    '55rnnoq0': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'len6hsm6': {
+      'en': 'Device Management',
+      'es': '',
+      'fr': '',
+    },
+    'a32mhkay': {
+      'en': 'Below is an a summary of activity.',
+      'es': '',
+      'fr': '',
+    },
+    'ckhnove2': {
+      'en': 'Dashboard',
+      'es': '',
+      'fr': '',
+    },
+    '4q4qcc9o': {
+      'en': '__',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // HomePageRecent
+  {
+    'xzcip54w': {
+      'en': 'Venues',
+      'es': 'Lugares',
+      'fr': 'Lieux',
+    },
+    'hknodh5o': {
+      'en': 'Producers',
+      'es': 'Productores',
+      'fr': 'Producteurs',
+    },
+    '3voy23fw': {
+      'en': 'Performers',
+      'es': 'Intérpretes',
+      'fr': 'Interprètes',
+    },
+    '5ycaxzqm': {
+      'en': 'Creators',
+      'es': 'Creadores',
+      'fr': 'Créateurs',
+    },
+    'eixlmecw': {
+      'en': 'Log In',
+      'es': 'Acceso',
+      'fr': 'Se connecter',
+    },
+    'st0xovf6': {
+      'en': 'Venues',
+      'es': 'Lugares',
+      'fr': 'Lieux',
+    },
+    'vflz306a': {
+      'en': 'Producers',
+      'es': 'Productores',
+      'fr': 'Producteurs',
+    },
+    'g49cksro': {
+      'en': 'Performers',
+      'es': 'Artistas',
+      'fr': 'Interprètes',
+    },
+    'tm2xyjed': {
+      'en': 'Creators',
+      'es': 'Creadores',
+      'fr': 'Créateurs',
+    },
+    'eh0dzgdi': {
+      'en': 'Log In',
+      'es': 'Acceso',
+      'fr': 'Se connecter',
+    },
+    'd841ynyu': {
+      'en':
+          'Moonlitely connects venues,  producers, performers, and content creators to craft unforgettable live experiences.',
+      'es':
+          'Moonlitely conecta lugares, productores, artistas y creadores de contenido para crear experiencias en vivo inolvidables.',
+      'fr':
+          'Moonlitely connecte des lieux, des producteurs, des artistes et des créateurs de contenu pour créer des expériences live inoubliables.',
+    },
+    'vilympyr': {
+      'en': 'Learn More',
+      'es': 'Más información',
+      'fr': 'Apprendre encore plus',
+    },
+    '91qyq8qu': {
+      'en': 'Get Started',
+      'es': 'Empezar',
+      'fr': 'Commencer',
+    },
+    'zu76sxef': {
+      'en': 'Quick Links',
+      'es': '',
+      'fr': '',
+    },
+    'ec0hiajj': {
+      'en': 'About Us',
+      'es': '',
+      'fr': '',
+    },
+    'ii2eue81': {
+      'en': 'Services',
+      'es': '',
+      'fr': '',
+    },
+    '1v8mc0nl': {
+      'en': 'Contact',
+      'es': '',
+      'fr': '',
+    },
+    'uegdnrq9': {
+      'en': '© 2024 Moonlitely Entertainment. All rights reserved.',
+      'es': '',
+      'fr': '',
+    },
+    'myu1i5mq': {
+      'en': 'Legal',
+      'es': '',
+      'fr': '',
+    },
+    '1219n1xm': {
+      'en': 'Terms of Service',
+      'es': '',
+      'fr': '',
+    },
+    'n9va70zw': {
+      'en': 'Privacy Policy',
+      'es': '',
+      'fr': '',
+    },
+    'k165232n': {
+      'en': ' ',
+      'es': '',
+      'fr': '',
+    },
+    'ekk9knki': {
+      'en': '© 2024 Moonlitely Entertainment. \nAll rights reserved.',
+      'es': '© 2024 Moonlitely Entertainment. Todos los derechos reservados.',
+      'fr': '© 2024 Moonlitely Entertainment. Tous droits réservés.',
+    },
+  },
+  // HomePage
+  {
+    'il1ipdh6': {
+      'en': 'Sign In',
+      'es': 'Iniciar sesión',
+      'fr': 'Se connecter',
+    },
+    '4bkxoq8m': {
+      'en': 'For Venues',
+      'es': 'Lugares',
+      'fr': 'Lieux',
+    },
+    'njrzjdae': {
+      'en': 'For Producers',
+      'es': 'Productores',
+      'fr': 'Producteurs',
+    },
+    'qguou69f': {
+      'en': 'For Performers',
+      'es': 'Intérpretes',
+      'fr': 'Interprètes',
+    },
+    '9w9s70du': {
+      'en': 'For Content Creators',
+      'es': 'Creadores de contenido',
+      'fr': 'Créateurs de contenu',
+    },
+    'gt4fhcek': {
+      'en': 'LIVE.',
+      'es': 'ENTRETENIMIENTO.',
+      'fr': 'LOCAL. ',
+    },
+    'de2ic343': {
+      'en': 'LOCAL.',
+      'es': 'LOCAL',
+      'fr': 'EN DIRECT.',
+    },
+    'om88ejlp': {
+      'en': 'ENTERTAINMENT.',
+      'es': 'EN VIVO.',
+      'fr': 'DIVERTISSEMENT.',
+    },
+    '58kkn626': {
+      'en': 'LIVE. LOCAL. ENTERTAINMENT.',
+      'es': 'ENTRETENIMIENTO. LOCAL. EN VIVO.',
+      'fr': 'DIVERTISSEMENT. LOCAL. EN DIRECT.',
+    },
+    '1hohmst0': {
+      'en': 'Get Started For Free',
+      'es': 'Empiece gratis',
+      'fr': 'Commencez gratuitement',
+    },
+    'qc0izkqs': {
+      'en': 'Learn More',
+      'es': 'Más información',
+      'fr': 'Apprendre encore plus',
+    },
+    'sayanq2q': {
+      'en':
+          'Moonlitely connects venues, \nproducers, performers, and \ncontent creators to craft \nunforgettable live experiences.',
+      'es':
+          'Moonlitely conecta lugares, \nproductores, artistas y \ncreadores de contenido para crear \nexperiencias en vivo inolvidables.',
+      'fr':
+          'Moonlitely connecte des lieux, \ndes producteurs, des artistes et des créateurs de contenu pour créer des expériences en direct inoubliables.',
+    },
+    'oid29vsl': {
+      'en':
+          'Moonlitely connects venues, producers, performers, and \ncontent creators to craft unforgettable live experiences.',
+      'es':
+          'Moonlitely conecta lugares, productores, artistas y \ncreadores de contenido para crear experiencias en vivo inolvidables.',
+      'fr':
+          'Moonlitely connecte les lieux, les producteurs, les artistes et\nles créateurs de contenu pour créer des expériences live inoubliables.',
+    },
+    'oyz60tu2': {
+      'en': '© 2024 Moonlitely Entertainment.  \nAll rights reserved.',
+      'es': '© 2024 Moonlitely Entertainment. \nTodos los derechos reservados.',
+      'fr': '© 2024 Moonlitely Entertainment. \nTous droits réservés.',
+    },
+    'bo3zo8a9': {
+      'en': 'Sign In',
+      'es': 'Iniciar sesión',
+      'fr': 'Se connecter',
+    },
+    '90rie2s4': {
+      'en': 'You\'ll love us in portrait mode!',
+      'es': '¡Nos amarás en modo retrato!',
+      'fr': 'Vous nous adorerez en mode portrait !',
+    },
+    '2sp6b6ez': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'fr': 'Maison',
     },
   },
   // editProfile_auth_2
@@ -481,6 +1124,302 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
   },
+  // SignUp_Modal
+  {
+    'fycq7hrp': {
+      'en': 'Sign Up',
+      'es': 'Inscribirse',
+      'fr': 'S\'inscrire',
+    },
+    'krzn4n41': {
+      'en': 'Email',
+      'es': 'Correo electrónico',
+      'fr': 'E-mail',
+    },
+    '188fsz31': {
+      'en': '',
+      'es': '',
+      'fr': '',
+    },
+    'i2bs0qel': {
+      'en': 'todd.c.herron@gmail.com',
+      'es': 'todd.c.herron@gmail.com',
+      'fr': 'todd.c.herron@gmail.com',
+    },
+    'hjw79dih': {
+      'en': 'Password',
+      'es': 'Contraseña',
+      'fr': 'Mot de passe',
+    },
+    'pk9avutl': {
+      'en': '',
+      'es': '',
+      'fr': '',
+    },
+    '5y27vrs7': {
+      'en': 'test1234',
+      'es': 'test1234',
+      'fr': 'test1234',
+    },
+    '24ffbtxd': {
+      'en': 'Confirm password',
+      'es': 'Confirmar Contraseña',
+      'fr': 'Confirmez le mot de passe',
+    },
+    '00o14yw5': {
+      'en': '',
+      'es': '',
+      'fr': '',
+    },
+    'bmtmqtbe': {
+      'en': 'test1234',
+      'es': 'test1234',
+      'fr': 'test1234',
+    },
+    'y6718nwv': {
+      'en': 'Create Account',
+      'es': 'Crear una cuenta',
+      'fr': 'Créer un compte',
+    },
+    'n9wyqpnl': {
+      'en': 'or continue with',
+      'es': 'o continuar con',
+      'fr': 'ou continuer avec',
+    },
+    '48xe7xrc': {
+      'en': 'Google',
+      'es': 'Google',
+      'fr': 'Google',
+    },
+    'icmzla9f': {
+      'en': 'Apple',
+      'es': 'Apple',
+      'fr': 'Apple',
+    },
+    'x4eo8qlc': {
+      'en': 'Field is required',
+      'es': '',
+      'fr': '',
+    },
+    'do7d5kw6': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'fr': '',
+    },
+    'iye8r9nq': {
+      'en': 'Field is required',
+      'es': '',
+      'fr': '',
+    },
+    'cfvqdjdm': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'fr': '',
+    },
+    'g1e4irwt': {
+      'en': 'Field is required',
+      'es': '',
+      'fr': '',
+    },
+    'wm4u8qor': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'fr': '',
+    },
+    'fj8d2iy1': {
+      'en': 'Have an account? ',
+      'es': '¿Tienes una cuenta? ',
+      'fr': 'Vous avez un compte? ',
+    },
+    'd9afgagn': {
+      'en': 'Sign In',
+      'es': 'Iniciar sesión',
+      'fr': 'Se connecter',
+    },
+    'g35w94jx': {
+      'en': 'Reset Password',
+      'es': 'Restablecer contraseña',
+      'fr': 'Réinitialiser le mot de passe',
+    },
+  },
+  // LanguageSelector
+  {
+    'd0v50e5u': {
+      'en': 'EN',
+      'es': 'EN',
+      'fr': 'EN',
+    },
+    'kqlhb5t7': {
+      'en': 'ES',
+      'es': 'ES',
+      'fr': 'ES',
+    },
+    '6moyjp6b': {
+      'en': 'FR',
+      'es': 'FR',
+      'fr': 'FR',
+    },
+  },
+  // EmailConfirmationCountDown
+  {
+    'h6u474yr': {
+      'en': 'Please check your email',
+      'es': 'Por favor revise su correo electrónico',
+      'fr': 'Veuillez vérifier votre email',
+    },
+  },
+  // SignIn_Modal
+  {
+    'o7p3dk03': {
+      'en': 'Sign In',
+      'es': 'Iniciar sesión',
+      'fr': 'Se connecter',
+    },
+    'y46pyogq': {
+      'en': 'Email',
+      'es': '',
+      'fr': '',
+    },
+    '7y3i1gsa': {
+      'en': '',
+      'es': '',
+      'fr': '',
+    },
+    'boxqj8rh': {
+      'en': 'todd.c.herron@gmail.com',
+      'es': '',
+      'fr': '',
+    },
+    'qqj87kxq': {
+      'en': 'Password',
+      'es': '',
+      'fr': '',
+    },
+    '7coubepy': {
+      'en': '',
+      'es': '',
+      'fr': '',
+    },
+    '73nb6e4q': {
+      'en': 'test1234',
+      'es': '',
+      'fr': '',
+    },
+    'bme2jwo4': {
+      'en': 'Sign In',
+      'es': 'Iniciar sesión',
+      'fr': 'Se connecter',
+    },
+    '3abh52uv': {
+      'en': 'or continue with',
+      'es': 'o continuar con',
+      'fr': 'ou continuer avec',
+    },
+    '0rfn9stc': {
+      'en': 'Google',
+      'es': 'Google',
+      'fr': 'Google',
+    },
+    'fbqa4kmz': {
+      'en': 'Apple',
+      'es': 'Apple',
+      'fr': 'Apple',
+    },
+    'zla7z0gm': {
+      'en': 'Email address is required',
+      'es': 'Se requiere dirección de correo electrónico',
+      'fr': 'L\'adresse e-mail est obligatoire',
+    },
+    'rt7mq6d7': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'fr': '',
+    },
+    'rndynwav': {
+      'en': 'Password is required',
+      'es': 'Se requiere contraseña',
+      'fr': 'Le mot de passe est requis',
+    },
+    '2wixn662': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'fr': '',
+    },
+    'd3o11md8': {
+      'en': 'Need an account? ',
+      'es': '¿Necesitas una cuenta?',
+      'fr': 'Besoin d\'un compte ?',
+    },
+    'h4dpbd8h': {
+      'en': 'Sign Up',
+      'es': 'Inscribirse',
+      'fr': 'S\'inscrire',
+    },
+    'me8el2k1': {
+      'en': 'Reset Password',
+      'es': 'Restablecer contraseña',
+      'fr': 'Réinitialiser le mot de passe',
+    },
+  },
+  // ResetPassword_Modal
+  {
+    '2jic8ydx': {
+      'en': 'Reset Password',
+      'es': 'Restablecer contraseña',
+      'fr': 'Réinitialiser le mot de passe',
+    },
+    's41j6j7c': {
+      'en': 'Email',
+      'es': 'Correo electrónico',
+      'fr': 'E-mail',
+    },
+    '4q45f0i6': {
+      'en': '',
+      'es': '',
+      'fr': '',
+    },
+    '2y2r823k': {
+      'en': 'Send Reset Link',
+      'es': 'Enviar enlace de restablecimiento',
+      'fr': 'Envoyer le lien de réinitialisation',
+    },
+    'mqxdrf7o': {
+      'en': 'Email address is required',
+      'es': 'Se requiere dirección de correo electrónico',
+      'fr': 'L\'adresse e-mail est obligatoire',
+    },
+    '25r4t2hc': {
+      'en': 'Invalid email address',
+      'es': '',
+      'fr': '',
+    },
+    '5utk3dkw': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'fr': '',
+    },
+    'w2ryb8du': {
+      'en': 'Password is required',
+      'es': '',
+      'fr': '',
+    },
+    '7l87iao3': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // UTILITY_DummyText
+  {
+    '8ey6b09a': {
+      'en':
+          'Boisterous did gentleman think appearance wise ten opinions connection natural forth fact favourite easy terminated explained size. Strictly sing pleasant. Journey kindness drawn company extent delay farther. Sooner wife amiable long heart gave taste very parties green improving. Marriage miss expenses fat. ',
+      'es':
+          'Destacaba atrevio perdido servir plazos ejemplo prescindir. Ocasiones gozabase cantando inventado ver pago. Penas susto tierno odio resonaban pormenor medico zumbaban vagabundos alli sacar aseguraban. Papada habil leer bajando lejanos ton arroz mejico fechas crimen hembras absoluta. Mitad recuerdos historia fueran abrio quedo sentaban intereses crei alumbrada poder gozabase hablado. ',
+      'fr':
+          'Tant mutuel vert corbeille doit vivons eumes plutot continue eux ouvrent cahots avis ere verdit certains soutenir. Sinistres pays feeriques oignons baquet campagne soleil au croire long petites armes fuite. Theatre coeur entrainait exemple allaient jeune epouser malheur bon singes perimetre prenons. Trotte allait branches frisottent fievre. Avantage casernes placa instruite laissa. ',
+    },
+  },
   // Miscellaneous
   {
     'uc1fht94': {
@@ -520,6 +1459,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ljoy77um': {
       'en': 'No Border',
+      'es': '',
+      'fr': '',
+    },
+    'kt2c46b1': {
+      'en': 'SUBTLE',
       'es': '',
       'fr': '',
     },
