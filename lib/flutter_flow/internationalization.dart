@@ -1028,7 +1028,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es':
           'Moonlitely conecta lugares, productores, artistas y \ncreadores de contenido para crear experiencias en vivo inolvidables.',
       'fr':
-          'Moonlitely connecte les lieux, les producteurs, les artistes et\nles créateurs de contenu pour créer des expériences live inoubliables.',
+          'Moonlitely connecte les lieux, les producteurs, les artistes et\nles créateurs de contenu pour créer des expériences en direct inoubliables.',
     },
     'oyz60tu2': {
       'en': '© 2024 Moonlitely Entertainment.  \nAll rights reserved.',

@@ -337,6 +337,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             Expanded(
                               child: SafeArea(
                                 child: Container(
+                                  height:
+                                      MediaQuery.sizeOf(context).height * 1.0,
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
