@@ -1,7 +1,7 @@
+import '/account/auth/email_confirmation_count_down/email_confirmation_count_down_widget.dart';
 import '/account/auth/reset_password_modal/reset_password_modal_widget.dart';
 import '/account/auth/sign_in_modal/sign_in_modal_widget.dart';
 import '/auth/firebase_auth/auth_util.dart';
-import '/components/email_confirmation_count_down_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -726,8 +726,7 @@ class _SignUpModalWidgetState extends State<SignUpModalWidget>
                                                 return;
                                               }
 
-                                              context.goNamedAuth(
-                                                  'Dashboard_VenueAdmin',
+                                              context.goNamedAuth('AdminPlans',
                                                   context.mounted);
                                             },
                                             text: FFLocalizations.of(context)
@@ -792,7 +791,7 @@ class _SignUpModalWidgetState extends State<SignUpModalWidget>
                                                     }
 
                                                     context.goNamedAuth(
-                                                        'Dashboard_VenueAdmin',
+                                                        'AdminPlans',
                                                         context.mounted);
                                                   },
                                                   text: FFLocalizations.of(

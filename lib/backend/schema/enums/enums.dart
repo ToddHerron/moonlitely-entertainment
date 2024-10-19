@@ -7,11 +7,38 @@ enum SignUpSteps {
 }
 
 enum UserType {
-  moonlitelyAdmin,
-  venueAdmin,
-  emcee,
-  contentCreator,
+  audience,
+  performer,
   producer,
+  venue,
+  contentcreator,
+  moonlitelyadmin,
+}
+
+enum Country {
+  ca,
+  us,
+  mx,
+}
+
+enum PlanId {
+  basic,
+  premium,
+  custom,
+}
+
+enum CurrencyCode {
+  USD,
+  EUR,
+  JPY,
+  GBP,
+  AUD,
+  CAD,
+  CHF,
+  CNH,
+  HKD,
+  NZD,
+  MXN,
 }
 
 extension FFEnumExtensions<T extends Enum> on T {
@@ -29,6 +56,12 @@ T? deserializeEnum<T>(String? value) {
       return SignUpSteps.values.deserialize(value) as T?;
     case (UserType):
       return UserType.values.deserialize(value) as T?;
+    case (Country):
+      return Country.values.deserialize(value) as T?;
+    case (PlanId):
+      return PlanId.values.deserialize(value) as T?;
+    case (CurrencyCode):
+      return CurrencyCode.values.deserialize(value) as T?;
     default:
       return null;
   }

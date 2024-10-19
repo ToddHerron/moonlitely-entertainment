@@ -1,4 +1,4 @@
-import '/components/email_confirmation_count_down_widget.dart';
+import '/account/auth/email_confirmation_count_down/email_confirmation_count_down_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'sign_up_modal_widget.dart' show SignUpModalWidget;
 import 'package:flutter/material.dart';

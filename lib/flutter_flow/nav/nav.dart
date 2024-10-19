@@ -2,7 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import '/backend/backend.dart';
+import '/backend/schema/structs/index.dart';
+import '/backend/schema/enums/enums.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
@@ -72,16 +74,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? const DashboardVenueAdminWidget()
-          : const HomePageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? const AdminPlansWidget() : const PricingWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? const DashboardVenueAdminWidget()
-              : const HomePageWidget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? const AdminPlansWidget() : const PricingWidget(),
         ),
         FFRoute(
           name: 'HomePageOld',
@@ -147,6 +147,37 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'HomePage',
           path: '/homePage',
           builder: (context, params) => const HomePageWidget(),
+        ),
+        FFRoute(
+          name: 'TestPage',
+          path: '/testPage',
+          builder: (context, params) => const TestPageWidget(),
+        ),
+        FFRoute(
+          name: 'Benefits',
+          path: '/benefits',
+          builder: (context, params) => BenefitsWidget(
+            userType: params.getParam<UserType>(
+              'userType',
+              ParamType.Enum,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'Pricing',
+          path: '/pricing',
+          builder: (context, params) => PricingWidget(
+            userType: params.getParam<UserType>(
+              'userType',
+              ParamType.Enum,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'AdminPlans',
+          path: '/AdminPlans',
+          requireAuth: true,
+          builder: (context, params) => const AdminPlansWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -266,6 +297,7 @@ class FFParameters {
     ParamType type, {
     bool isList = false,
     List<String>? collectionNamePath,
+    StructBuilder<T>? structBuilder,
   }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -284,6 +316,7 @@ class FFParameters {
       type,
       isList,
       collectionNamePath: collectionNamePath,
+      structBuilder: structBuilder,
     );
   }
 }
@@ -317,7 +350,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/homePage';
+            return '/pricing';
           }
           return null;
         },
